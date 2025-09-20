@@ -608,7 +608,6 @@ textarea.contact-input {
 
 .blog-list {
   display: grid;
-  grid-template-columns: repeat(2, max-content); /* only as wide as the cards */
   justify-content: center;  /* centers both columns as a group */
   gap: 40px;
   list-style: none;
@@ -617,9 +616,8 @@ textarea.contact-input {
 }
 
 .blog-card {
-  width: 100%;     /* fills the grid cell */
-  max-width: none; /* don’t restrict */
-  margin: 0;
+  max-width: 500px;   /* or 400px if you want narrower */
+  margin-inline: auto; /* center it */
 }
 
 
